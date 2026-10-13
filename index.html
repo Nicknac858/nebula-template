@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05030b" />
+    <meta name="description" content="Nebula — ideas in motion. A luminous, animated landing page template." />
+    <title>Nebula — Ideas in Motion</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="./assets/nebula-art.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="scene" id="home">
+      <div class="art art--base" aria-hidden="true"></div>
+      <div class="art art--echo" aria-hidden="true"></div>
+      <div class="art-shade" aria-hidden="true"></div>
+      <div class="light-sweep" aria-hidden="true"></div>
+      <canvas id="stardust" aria-hidden="true"></canvas>
+
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="Nebula home">
+          <span class="brand-orbit" aria-hidden="true"></span>
+          <span class="brand-name">NEBULA</span>
+        </a>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a class="nav-link is-active" href="#home" aria-current="page">Home</a>
+          <button class="nav-link" type="button" data-preview="Product">Product</button>
+          <button class="nav-link" type="button" data-preview="Solutions">Solutions</button>
+          <button class="nav-link" type="button" data-preview="Company">Company</button>
+          <button class="nav-link" type="button" data-preview="Contact">Contact</button>
+        </nav>
+
+        <div class="header-actions">
+          <button class="icon-button search-button" type="button" aria-label="Search" data-preview="Search">
+            <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="12.5" cy="12.5" r="8.25"/><path d="m18.7 18.7 6.1 6.1"/></svg>
+          </button>
+          <button class="header-cta" type="button" data-preview="Get Started">Get Started</button>
+          <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+            <span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">IDEAS IN MOTION</p>
+        <h1 id="hero-title">A Brighter<br />Tomorrow<br /><span>in Motion</span></h1>
+        <p class="hero-description">We turn imagination into intelligent<br class="desktop-break" /> experiences that move the world forward.</p>
+        <div class="hero-actions">
+          <button class="primary-button" type="button" data-preview="Explore the Future">
+            <span>Explore the Future</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17m-6.5-6.5L20 12l-6.5 6.5"/></svg>
+          </button>
+          <button class="video-button" type="button" data-preview="Watch Video">
+            <span class="play-circle"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6z"/></svg></span>
+            <span>Watch Video</span>
+          </button>
+        </div>
+      </section>
+
+      <div class="slide-index" aria-label="Current slide: 1 of 4">
+        <span class="current">01</span><span>02</span><span>03</span><span>04</span>
+      </div>
+
+      <button class="scroll-cue" type="button" data-preview="Scroll to Explore">
+        <span class="scroll-line" aria-hidden="true"></span>
+        <span>SCROLL<br />TO EXPLORE</span>
+      </button>
+    </main>
+
+    <dialog class="preview-dialog" id="preview-dialog" aria-labelledby="preview-title">
+      <button class="dialog-close" type="button" aria-label="Close">×</button>
+      <span class="dialog-eyebrow">NEBULA TEMPLATE</span>
+      <h2 id="preview-title">The next chapter is yours.</h2>
+      <p id="preview-message">This section is ready for your content when you add the rest of the site.</p>
+      <button class="dialog-done" type="button">Back to Nebula <span aria-hidden="true">↗</span></button>
+    </dialog>
+  </body>
+</html>
+
